@@ -9,13 +9,14 @@
 
 
 // delete hoveritem
-var adWindow = document.getElementsByClassName('ua-detected ua-ff');
+// note: 'ua-default' is renamed to 'ua-detected ua-ff' later on
+var adWindow = document.getElementsByClassName('ua-default');  
 if (adWindow) {
-    //adWindow[0].setAttribute('style', ' !important');
     adWindow[0].parentNode.removeChild(adWindow[0]);
 }
 
-// remove blurring
+// remove blurring 
+// note: normally not needed
 var aBlurringDiv = document.getElementById('wrapper-content');
 if (aBlurringDiv) {
     aBlurringDiv.setAttribute('style', 'filter:blur(0px) !important; opacity: 1 !important');
