@@ -19,12 +19,12 @@ setInterval(function(){
   // Body Scrollbar
   var badSpiegelBody = document.querySelector('body');
 	if (badSpiegelBody) {
-    badSpiegelBody.setAttribute('style', '!important');
+    	badSpiegelBody.setAttribute('style', '!important');
   }
   // Body Scrollbar
   var badSpiegelHtml = document.querySelector('html');
 	if (badSpiegelHtml) {
-    badSpiegelHtml.setAttribute('style', '!important');
+   	badSpiegelHtml.setAttribute('style', '!important');
   }
     
 }, 1000 ); // 2000 means every two seconds (in milliseconds)
